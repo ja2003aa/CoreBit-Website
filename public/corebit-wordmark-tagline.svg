@@ -1,0 +1,23 @@
+<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wordGradient" x1="40" y1="18" x2="820" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DDF8FF"/>
+      <stop offset="1" stop-color="#A7F1B8"/>
+    </linearGradient>
+    <style>
+      .title {
+        font-family: "Plus Jakarta Sans", "Inter", "Segoe UI", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+      .subtitle {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+    </style>
+  </defs>
+
+  <text x="28" y="144" class="title" font-size="136" fill="url(#wordGradient)">CoreBit</text>
+  <text x="44" y="202" class="subtitle" font-size="25" fill="#78A4B2">DIGITAL PRODUCT STUDIO</text>
+</svg>

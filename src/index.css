@@ -1,0 +1,34 @@
+:root {
+  font-family: Inter, "Segoe UI", Tahoma, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #ecfeff;
+  background: radial-gradient(circle at 80% 10%, #173b44, #07161b 45%, #050e12 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 600;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}

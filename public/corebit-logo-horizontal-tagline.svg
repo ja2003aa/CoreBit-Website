@@ -1,0 +1,40 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="markGradient" x1="72" y1="72" x2="320" y2="248" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1DBBFF"/>
+      <stop offset="1" stop-color="#6CFF86"/>
+    </linearGradient>
+    <linearGradient id="wordGradient" x1="410" y1="80" x2="1020" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DDF8FF"/>
+      <stop offset="1" stop-color="#A7F1B8"/>
+    </linearGradient>
+    <style>
+      .title {
+        font-family: "Plus Jakarta Sans", "Inter", "Segoe UI", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+      .subtitle {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+    </style>
+  </defs>
+
+  <rect x="64" y="60" width="264" height="264" rx="68" fill="#0C1A22"/>
+  <rect x="64" y="60" width="264" height="264" rx="68" stroke="#1B3A48"/>
+
+  <g transform="translate(72 88)">
+    <path d="M66 10H188L168 36H74V156H168L188 182H66C41.7 182 22 162.3 22 138V54C22 29.7 41.7 10 66 10Z" fill="url(#markGradient)"/>
+    <path d="M96 62H186V88H104V104H172V130H104V130H186V156H96V62Z" fill="#0C1A22"/>
+    <circle cx="222" cy="52" r="8" fill="url(#markGradient)"/>
+    <circle cx="222" cy="92" r="8" fill="url(#markGradient)"/>
+    <circle cx="222" cy="132" r="8" fill="url(#markGradient)"/>
+  </g>
+
+  <g transform="translate(404 102)">
+    <text x="0" y="98" class="title" font-size="108" fill="url(#wordGradient)">CoreBit</text>
+    <text x="14" y="146" class="subtitle" font-size="25" fill="#78A4B2">DIGITAL PRODUCT STUDIO</text>
+  </g>
+</svg>

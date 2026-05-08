@@ -1,0 +1,35 @@
+<svg width="800" height="1066" viewBox="0 0 800 1066" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1066" fill="#f2f3f4"/>
+
+  <!-- Clean, smooth reconstruction with consistent stroke geometry -->
+  <g fill="none" stroke="#003c73" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top outer arc -->
+    <path d="M214 351 A190 190 0 1 1 585 341" stroke-width="48"/>
+
+    <!-- Top inner spiral / eye -->
+    <path d="M356 398
+             A86 86 0 1 1 463 503" stroke-width="44"/>
+
+    <!-- Main sweeping diagonal stroke -->
+    <path d="M145 661
+             C 220 583, 305 542, 430 489
+             C 507 457, 554 438, 607 414" stroke-width="54"/>
+
+    <!-- Large lower loop -->
+    <path d="M590 635
+             C 662 644, 709 692, 709 771
+             C 709 864, 634 939, 538 939
+             L 340 939
+             C 247 939, 171 862, 171 769
+             C 171 703, 211 650, 279 620" stroke-width="62"/>
+
+    <!-- Lower inner counter-shape -->
+    <path d="M378 681
+             L 503 681
+             C 559 681, 601 724, 601 780
+             C 601 836, 559 880, 503 880
+             L 392 880
+             C 336 880, 291 835, 291 779
+             L 291 699" stroke-width="48"/>
+  </g>
+</svg>

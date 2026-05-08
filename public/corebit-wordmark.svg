@@ -1,0 +1,17 @@
+<svg width="760" height="240" viewBox="0 0 760 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wordGradient" x1="40" y1="28" x2="700" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DDF8FF"/>
+      <stop offset="1" stop-color="#A7F1B8"/>
+    </linearGradient>
+    <style>
+      .title {
+        font-family: "Plus Jakarta Sans", "Inter", "Segoe UI", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+    </style>
+  </defs>
+
+  <text x="28" y="158" class="title" font-size="152" fill="url(#wordGradient)">CoreBit</text>
+</svg>
