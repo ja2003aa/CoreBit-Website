@@ -19,7 +19,25 @@ function githubPagesSpaFallback() {
   }
 }
 
+/** Bust favicon cache each deploy (GITHUB_RUN_NUMBER in Actions). */
+function faviconCacheBust() {
+  return {
+    name: 'favicon-cache-bust',
+    apply: 'build',
+    transformIndexHtml(html) {
+      const v =
+        process.env.GITHUB_RUN_NUMBER ||
+        process.env.GITHUB_SHA?.slice(0, 7) ||
+        String(Date.now())
+      return html
+        .replace(/href="\/favicon\.ico"/g, `href="/favicon.ico?v=${v}"`)
+        .replace(/href="\/favicon\.png"/g, `href="/favicon.png?v=${v}"`)
+        .replace(/href="\/corebit-mark\.svg"/g, `href="/corebit-mark.svg?v=${v}"`)
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [react(), githubPagesSpaFallback()],
+  plugins: [react(), faviconCacheBust(), githubPagesSpaFallback()],
   base: '/',
 })
