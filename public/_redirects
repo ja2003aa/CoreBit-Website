@@ -1,1 +1,3 @@
+# Browsers often request /favicon.ico even when <link> points elsewhere
+/favicon.ico /favicon.png 200
 /* /index.html 200
