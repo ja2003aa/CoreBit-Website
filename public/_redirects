@@ -1,3 +1,2 @@
-# Browsers often request /favicon.ico even when <link> points elsewhere
-/favicon.ico /favicon.png 200
+# Netlify only (ignored on GitHub Pages). SPA fallback:
 /* /index.html 200
