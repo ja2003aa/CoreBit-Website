@@ -1,9 +1,27 @@
-import { copyFileSync, existsSync } from 'node:fs'
+import { copyFileSync, existsSync, writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
+
+/**
+ * Real Windows ICO from favicon.png. Safari often ignores a PNG file renamed
+ * to .ico (inconsistent tab icon vs generic placeholder).
+ */
+function faviconIcoFromPng() {
+  return {
+    name: 'favicon-ico-from-png',
+    apply: 'build',
+    async closeBundle() {
+      const pngPath = resolve('dist/favicon.png')
+      if (!existsSync(pngPath)) return
+      const pngToIco = (await import('png-to-ico')).default
+      const buf = await pngToIco(pngPath)
+      writeFileSync(resolve('dist/favicon.ico'), buf)
+    },
+  }
+}
 
 /** GitHub Pages has no Netlify-style rewrites; 404.html must match index.html for SPA routes. */
 function githubPagesSpaFallback() {
@@ -38,6 +56,6 @@ function faviconCacheBust() {
 }
 
 export default defineConfig({
-  plugins: [react(), faviconCacheBust(), githubPagesSpaFallback()],
+  plugins: [react(), faviconCacheBust(), faviconIcoFromPng(), githubPagesSpaFallback()],
   base: '/',
 })
