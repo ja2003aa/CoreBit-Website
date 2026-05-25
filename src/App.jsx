@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { LanguageProvider } from './context/LanguageContext.jsx'
 import MarketingPage from './pages/MarketingPage.jsx'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage.jsx'
+import RefundPolicyPage from './pages/RefundPolicyPage.jsx'
 import TermsOfUsePage from './pages/TermsOfUsePage.jsx'
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<MarketingPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/refund-policy" element={<RefundPolicyPage />} />
           <Route path="/terms-of-use" element={<TermsOfUsePage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

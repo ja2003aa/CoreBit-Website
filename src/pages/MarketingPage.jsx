@@ -17,7 +17,7 @@ export default function MarketingPage() {
   const { t } = useSiteLanguage()
 
   useEffect(() => {
-    const sectionIds = ['home', 'process', 'services', 'products', 'contact-form']
+    const sectionIds = ['home', 'process', 'services', 'products', 'pricing', 'contact-form']
 
     const updateActiveSection = () => {
       const topbar = document.querySelector('.topbar')
@@ -198,6 +198,26 @@ export default function MarketingPage() {
             <p>{t.products.zainaBody}</p>
             <p className="product-note">{t.products.zainaNote}</p>
           </article>
+        </section>
+
+        <section className="section pricing-section" id="pricing" aria-labelledby="pricing-heading">
+          <div className="section-head">
+            <h2 id="pricing-heading">{t.pricing.heading}</h2>
+            <p>{t.pricing.subheading}</p>
+          </div>
+          <div className="pricing-card-shell">
+            <article className="pricing-card featured">
+              <div className="pricing-card-top">
+                <p className="pricing-plan-label">{t.pricing.planTitle}</p>
+                <h3 className="pricing-price">{t.pricing.planPrice}</h3>
+              </div>
+              <p className="pricing-description">{t.pricing.planDescription}</p>
+              <div className="pricing-note">
+                <span className="pricing-note-label">{t.pricing.noteLabel}</span>{' '}
+                <span>{t.pricing.noteText}</span>
+              </div>
+            </article>
+          </div>
         </section>
 
       </main>

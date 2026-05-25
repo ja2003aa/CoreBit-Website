@@ -9,6 +9,7 @@ export const siteContent = {
         process: 'كيف نبني',
         services: 'الخدمات',
         products: 'المنتجات',
+        pricing: 'الأسعار',
         contact: 'تواصل معنا',
       },
       hero: {
@@ -74,6 +75,17 @@ export const siteContent = {
         zainaNote:
           'زينة قيد التطوير حاليًا، وسيتم إطلاقها بعد إتمام الاختبارات ومتطلبات الامتثال واعتماد المنصة.',
       },
+      pricing: {
+        heading: 'الأسعار',
+        subheading: 'تسعير واضح لمقدمي الخدمات الراغبين في استخدام منصة زينة لإدارة أعمالهم اليومية.',
+        planTitle: 'اشتراك Zaina لمقدمي الخدمات',
+        planPrice: '99 ريال سعودي شهريًا',
+        planDescription:
+          'يشمل الاشتراك إمكانية استخدام منصة Zaina لإدارة الحجوزات، عرض الخدمات، استقبال طلبات العملاء، وتنظيم معلومات العملاء والخدمات.',
+        noteLabel: 'ملاحظة:',
+        noteText:
+          'تختلف أسعار خدمات التجميل المقدمة للعملاء حسب مقدم/مقدمة الخدمة ونوع الخدمة، ويتم عرض السعر النهائي للعميل داخل التطبيق قبل تأكيد الحجز والدفع.',
+      },
       contact: {
         heading: 'تواصل مع CoreBit',
         subheading:
@@ -119,12 +131,14 @@ export const siteContent = {
         legalTitle: 'قانوني',
         legalLinks: [
           { label: 'سياسة الخصوصية', to: '/privacy-policy' },
+          { label: 'سياسة الاسترجاع والاسترداد', to: '/refund-policy' },
           { label: 'شروط الاستخدام', to: '/terms-of-use' },
         ],
         companyLinks: [
           { label: 'الرئيسية', to: '/#home' },
           { label: 'الخدمات', to: '/#services' },
           { label: 'المنتجات', to: '/#products' },
+          { label: 'الأسعار', to: '/#pricing' },
           { label: 'تواصل معنا', to: '/#contact-form' },
         ],
         copyright: 'جميع الحقوق محفوظة لـ CoreBit.',
@@ -140,6 +154,7 @@ export const siteContent = {
         process: 'How we build',
         services: 'Services',
         products: 'Products',
+        pricing: 'Pricing',
         contact: 'Contact Us',
       },
       hero: {
@@ -205,6 +220,17 @@ export const siteContent = {
         zainaNote:
           'Zaina is currently under development and will be launched after completing testing, compliance, and platform approval requirements.',
       },
+      pricing: {
+        heading: 'Pricing',
+        subheading: 'Clear pricing for service providers who want to use Zaina to manage daily operations.',
+        planTitle: 'Zaina Subscription for Service Providers',
+        planPrice: 'SAR 99 / month',
+        planDescription:
+          'The subscription includes access to the Zaina platform for booking management, service listing, receiving customer requests, and organizing customer and service information.',
+        noteLabel: 'Note:',
+        noteText:
+          'Beauty service prices shown to customers vary depending on the service provider and service type, and the final price is displayed inside the app before booking confirmation and payment.',
+      },
       contact: {
         heading: 'Contact CoreBit',
         subheading:
@@ -250,12 +276,14 @@ export const siteContent = {
         legalTitle: 'Legal',
         legalLinks: [
           { label: 'Privacy Policy', to: '/privacy-policy' },
+          { label: 'Refund Policy', to: '/refund-policy' },
           { label: 'Terms of Use', to: '/terms-of-use' },
         ],
         companyLinks: [
           { label: 'Home', to: '/#home' },
           { label: 'Services', to: '/#services' },
           { label: 'Products', to: '/#products' },
+          { label: 'Pricing', to: '/#pricing' },
           { label: 'Contact Us', to: '/#contact-form' },
         ],
         copyright: 'All rights reserved to CoreBit.',

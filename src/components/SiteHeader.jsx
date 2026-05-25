@@ -70,6 +70,14 @@ export function SiteHeader({ activeSection = null, menuOpen, setMenuOpen, onNavS
           {t.nav.products}
         </Link>
         <Link
+          to="/#pricing"
+          className={navClass('pricing')}
+          onClick={handleNavClick('pricing')}
+          onFocus={handleNavFocus('pricing')}
+        >
+          {t.nav.pricing}
+        </Link>
+        <Link
           to="/#contact-form"
           className={navClass('contact-form')}
           onClick={handleNavClick('contact-form')}
